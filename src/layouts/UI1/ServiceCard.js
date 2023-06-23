@@ -5,16 +5,18 @@ const ServiceCard = ({ icon, title, content }) => {
     return (
         <div className='flex flex-col basis-full md:basis-1/3 gap-3'>
             {icon}
-            <div className='font-bold'>
+            <h3 className='font-bold'>
                 {title}
-            </div>
-            <div className='flex-auto'>
+            </h3>
+            <p className='flex-auto'>
                 {content}
+            </p>
+            <div>
+                <a href="#" className="mt-5 text-indigo-400 inline-flex gap-1">
+                    Learn more
+                    <ArrowRightIcon className="h-4 w-4 self-center"></ArrowRightIcon>
+                </a>
             </div>
-            <a href="#" className="mt-5 text-indigo-400 flex gap-1">
-                Learn more
-                <ArrowRightIcon className="h-4 w-4 self-center"></ArrowRightIcon>
-            </a>
         </div>
     );
 };
