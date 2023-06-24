@@ -26,13 +26,13 @@ const services = [
 const ServicesSection = () => {
     return (
         <section className="container mx-auto my-24">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {services.map((item, index) => (
                     <React.Fragment key={`service-${index}`}>
                         <ServiceCard icon={item.icon} title={item.title} content={item.content}></ServiceCard>
                         {
                             index !== services.length - 1 &&
-                            <hr className="block md:hidden h-px my-5 bg-gray-700 border-0"></hr>
+                            <hr className="block lg:hidden h-px my-5 bg-gray-700 border-0"></hr>
                         }
                     </React.Fragment>
                 ))}
